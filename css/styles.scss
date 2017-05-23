@@ -1,4 +1,27 @@
+/* Grand Central Station, Operator, Main */
+
+
+// Import 
+
+@import "normalize";
+@import "lightgallery";
+@import "lg-transitions";
+
+
 /* Styling */
 body {
-    background: red;
+    background: wheat;
+}
+
+// Portfolio Items 
+
+figure {
+    background: #666;
+    padding: 1em;
+    text-align: center;
+    width: 300px;
+}
+
+figure img {
+    box-shadow: 2px 2px 2px gray;
 }
