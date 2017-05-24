@@ -320,15 +320,15 @@ body{
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
   .gallery_item {width: 49.45%;}
-  .gallery_item_preview a img{height:180px;}
+  .gallery_item_preview a img{height:600px; width: 400px;}
   .box{margin: auto;background: #F8F8F8;padding: 4em 1em 1em 1em;width:80%;}
   .cl{top: 0;right: 0.5em;}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) { 
-  .gallery_item {width: 100%;}
+  .gallery_item {width: 50%;}
   .gallery_item_preview a img{height:200px;}
-  .box{background: #F8F8F8;padding: 4em 1em 1em 1em;width:100%;}
+  .box{background: #F8F8F8;padding: 4em 1em 1em 1em;width:50%;}
   .cl{top: 0;right: 0.5em;}
   .gallery_item_list{width:100% !important;}
 }
