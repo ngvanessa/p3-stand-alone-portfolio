@@ -11,12 +11,13 @@
 @import "normalize";
 @import "lightgallery";
 @import "lg-transitions";
-
+@import "lg-thumbnail";
 
 /* Styling */
 
 h1 {
     font-size: 2em;
+    margin: 0 auto;
     align-items: center;
     font-family: 'Playball', cursive;
 }
@@ -24,14 +25,11 @@ h1 {
 // Portfolio Items 
 
 figure {
+    font-family: 'Raleway';
     background: #666;
     padding: 1em;
     text-align: center;
     width: 300px;
-}
-
-figure img {
-    box-shadow: 2px 2px 2px gray;
 }
 
 
@@ -100,16 +98,15 @@ a:focus{
 /*	Layout
 =======================*/
 body{
-  background:#ECECEC;
+  background:#fff;
   overflow-X:hidden;
-  font-size:13px;
-  font-family: 'Metrophobic', sans-serif;
-  font-weight:400;
+  font-size: 1em;
+  font-family: 'Raleway';
 }
 
 .wrapper {
   margin: 5% auto;
-  display: block;
+  display: inline-block;
   width: 96%;
   height: 100%;
   padding: 0;
@@ -119,12 +116,12 @@ body{
   padding:0.2em;
   margin:0;
 }
-.gallery{}
+.gallery{
+}
 
 .gallery_item {
   float: left;
-  width: 24.59%;
-  display: inline-block;
+  width: 25%;
   margin: 0 auto;
   margin-right: 0.2em;
   margin-bottom:0.2em;
@@ -206,6 +203,7 @@ body{
   width:50%;
   text-align:left;
 }
+
 .box h3{
  font-family: 'Raleway', sans-serif;
   color:#F88484;
@@ -224,49 +222,8 @@ body{
   color:#F88484;
 }
 
-
-
-.video {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
-}
-
-.video iframe,
-.video object,
-.video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /*  list style
 =============================*/
-.icon_list {
-  width: 30px;
-  height: 30px;
-  display: block;
-  padding: 0.5em;
-  text-decoration: none;
-  line-height: 0.4em;
-  background: #FFF;
-  color: #838383;
-  border: 1px solid #C2C2C2;
-  box-shadow: 0 1px 1px #4B4B4B;
-  border-radius: 4px;
-  position: absolute;
-  right: 0.3em;
-  top: 0.3em;
-  transition: all 0.5s ease;
-}
-.icon_list:hover {
-  background: #4E4E4E;
-  color: #FFF;
-  border-color: #000;
-  transition: all 0.5s ease;
-}
 .gallery_item_list {
   float: none !important;
   display: block !important;
