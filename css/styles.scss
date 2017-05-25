@@ -4,6 +4,7 @@
 //Typefaces
 
 @import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 // Import 
 
@@ -165,7 +166,7 @@ body{
   transition:all 1s ease;
 }
 .gallery_item_preview a h3{
-  font-family: 'Leckerli One', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 .gallery_item_preview a img{
   display:block;
@@ -206,7 +207,7 @@ body{
   text-align:left;
 }
 .box h3{
-  font-family: 'Leckerli One', cursive;
+ font-family: 'Raleway', sans-serif;
   color:#F88484;
 }
 
