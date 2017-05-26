@@ -1,7 +1,7 @@
 /* Grand Central Station, Operator, Main */
 
 
-//Typefaces
+//TYPEFACES
 
 @import url('https://fonts.googleapis.com/css?family=Playball');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -11,33 +11,44 @@
 @import "normalize";
 @import "lightgallery";
 @import "lg-transitions";
-@import "lg-thumbnail";
 
-// Portfolio
+// HEADER
 
-body {
-    background: #fff;
+header, footer {
+    background-color: #ccc;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 2em;
 }
 
-main {
+// FOOTER
+
+footer {
+    display: table-row;
+    height: 1px;
+    font-size: 1em;
+}
+
+
+// PORTFOLIO
+
+
+.gallery {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
 }
-
-h2 {
-    color: #ff0000;
-}
-
-// Flexbox Layout
 
 figure {
-    font-family: 'Raleway';
-    display: inline-block;
-    flex-direction: row;
-    text-align: center;
-    background: #fff;
-    padding: 1em;
+    background: #ccc;
+    padding: 10px;
+    width; 30%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    font-family: 'Raleway';    
 }
 
 figure img {
@@ -47,6 +58,12 @@ figure img {
 
 figcaption {
     color: #fff;
+}
+
+// CAPTIONS
+
+.caption {
+    display: none;
 }
 
 // RWD 
