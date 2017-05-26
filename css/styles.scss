@@ -13,10 +13,6 @@
 @import "lg-transitions";
 @import "lg-thumbnail";
 
-body {
-    background: #fff
-}
-
 // Portfolio
 
 body {
@@ -29,17 +25,19 @@ main {
     justify-content: center;
 }
 
+h2 {
+    color: #ff0000;
+}
+
 // Flexbox Layout
 
 figure {
     font-family: 'Raleway';
-    background: #fff;
-    border: #000;
-    border-radius: 5px solid black;
+    display: inline-block;
+    flex-direction: row;
     text-align: center;
     background: #fff;
-    padding: 2em;
-    width: 90%;
+    padding: 1em;
 }
 
 figure img {
