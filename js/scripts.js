@@ -1,8 +1,8 @@
 // Scripts
 
 // Lightgallery
-$('gallery_item_preview').lightGallery({
-    selector: 'img',
+$('figure').lightGallery({
+    selector: 'a',
     mode: 'lg-lollipop'
 });
 
