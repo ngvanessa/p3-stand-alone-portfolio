@@ -1,63 +1,72 @@
 /* Grand Central Station, Operator, Main */
 
-
-//TYPEFACES
-
-@import url('https://fonts.googleapis.com/css?family=Playball');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
 // Import 
 
 @import "normalize";
 @import "lightgallery";
 @import "lg-transitions";
 
+//TYPEFACES
+
+@import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 // HEADER
 
-header, footer {
-    background-color: #ccc;
-    height: 50px;
-    line-height: 50px;
+
+h1 {
+    font-family: 'Playball', cursive;
     text-align: center;
-    font-size: 2em;
+    color: white;
+    font-size: 2.5em;
 }
 
-// FOOTER
+h2 {
+    font-family: 'Raleway';    
+    font-size: 1.5em;
+    text-align: center;
+}
 
-footer {
-    display: table-row;
-    height: 1px;
-    font-size: 1em;
+body {
+       background: #000;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
 }
 
 
 // PORTFOLIO
 
 
-.gallery {
+article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-figure {
+article figure {
     background: #ccc;
-    padding: 10px;
-    width; 30%;
+    padding: 2em;
+    width: 20em;
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
-    font-family: 'Raleway';    
+    justify-content: center;
 }
 
 figure img {
    box-shadow: 2px 2px 2px gray;
+    
 }
 
 
-figcaption {
-    color: #fff;
+article figcaption {
+    color: #000;
+    text-align: center;
+    font-family: 'Raleway';    
 }
 
 // CAPTIONS
@@ -66,15 +75,18 @@ figcaption {
     display: none;
 }
 
+#gallery {
+    display: flex;
+  align-items: center;
+}
+
+
 // RWD 
 
 /* Mobile: 320px = 20em */
-	@media screen and (min-width: 20em)
+@media screen and (min-width: 20em) {
+    figure {
+        width: 200px;
+    }
+}
 
-
-	/* Tablet:  768px = 160em */
-	@media screen and (min-width: 48em) 
-
-
-	/* Desktop: 1280px = 80em */
-	@media screen and (min-width: 80em) 
